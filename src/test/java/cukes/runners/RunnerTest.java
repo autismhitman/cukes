@@ -7,7 +7,7 @@ import io.cucumber.testng.CucumberOptions;
 import net.bytebuddy.implementation.bind.annotation.Super;
 
 @CucumberOptions(
-		plugin = {"pretty", "html:target/cucumber.html"}, 	 
+		plugin = {"pretty", "html:target/cucumber.html","json:target/cucumber.json"}, 	 
 		glue = {"cukes"},
 	    features = {"src/test/resources/cukes/features"},
 	    dryRun= false
